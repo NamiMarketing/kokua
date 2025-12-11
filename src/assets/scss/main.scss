@@ -26,11 +26,30 @@
     &__title {
       font-size: 32px;
       line-height: 32px;
+      white-space: normal;
+      padding: 0 $spacing-lg;
+      max-width: 90%;
     }
   }
 
   .content-section {
     padding: $spacing-2xl $spacing-md;
+
+    &__wrapper {
+      flex-direction: column;
+      gap: $spacing-xl;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    &__content {
+      width: 100%;
+    }
 
     &__title {
       font-size: 40px;
@@ -40,6 +59,7 @@
     &__text {
       font-size: 20px;
       line-height: 28px;
+      max-width: 100%;
     }
   }
 
@@ -70,6 +90,20 @@
     &__image {
       width: 300px;
       height: 300px;
+
+      &--with-bg-left::before {
+        width: 613px;
+        height: 335px;
+        left: -136px;
+        top: 43%;
+      }
+
+      &--with-bg-right::before {
+        width: 290px;
+        height: 220px;
+        right: -10px;
+        top: 58%;
+      }
     }
 
     &--reverse {
@@ -102,6 +136,7 @@
       flex-direction: column;
       gap: $spacing-xl;
       text-align: center;
+      align-items: center;
     }
   }
 }
