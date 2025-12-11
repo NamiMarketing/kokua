@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+// Reset
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.5;
+  color: $color-dark;
+  background-color: $color-white;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+// Utilities
+.container {
+  width: 100%;
+  max-width: $breakpoint-wide;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.flip-vertical {
+  transform: scaleY(-1);
+}

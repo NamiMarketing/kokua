@@ -1,0 +1,245 @@
+---
+layout: base.njk
+title: Kokua Poke - O seu poke, do seu jeito
+---
+
+<div class="lp">
+  {# Header Logo #}
+  <div class="header-logo">
+    <img src="/assets/images/logos/k-logo-2.png" alt="Kokua Logo">
+  </div>
+
+  {# Hero Section #}
+  <section class="hero">
+    <picture class="hero__image">
+      <source media="(max-width: 768px)" srcset="/assets/images/hero/hero-image-mobile.png">
+      <source media="(min-width: 769px)" srcset="/assets/images/hero/hero-image.png">
+      <img src="/assets/images/hero/hero-image.png" alt="Kokua Poke">
+    </picture>
+    <h1 class="hero__title">
+      O seu <strong>poke</strong>, do seu jeito.
+    </h1>
+    <div class="hero__decoration-left">
+      <img src="/assets/images/logos/decor-left.png" alt="">
+    </div>
+    <div class="hero__decoration-right">
+      <img src="/assets/images/logos/decor-right.png" alt="">
+    </div>
+  </section>
+
+  {# Content Section - Fome de poke #}
+  <section class="content-section">
+    <div class="content-section__wrapper">
+      <div class="content-section__image">
+        <img src="/assets/images/sections/section-2.jpg" alt="Poke Bowl">
+        <div class="content-section__logo">
+          <img src="/assets/images/logos/k-logo-1.png" alt="Kokua Logo">
+        </div>
+      </div>
+      <div class="content-section__content">
+        <h2 class="content-section__title">
+          Fome de poke,<br>
+          vontade de<br>
+          fazer o bem.
+        </h2>
+        <p class="content-section__text">
+          No Kokua, cada poke é feito para despertar o melhor do seu dia. Ingredientes frescos, combinações vibrantes e
+          aquele equilíbrio perfeito entre sabor e leveza. Aqui, a comida é preparada com cuidado, cor e propósito —
+          seja um poke tradicional, uma salad leve ou o seu bowl do seu jeito. Experimente o sabor do bem-estar.
+        </p>
+        <a href="#" class="content-section__button">Peça seu poke</a>
+      </div>
+    </div>
+  </section>
+
+  {# Image Section with Carousel #}
+  <section class="image-section">
+    <div class="swiper image-section__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-section__image">
+            <img src="/assets/images/sections/section-1.jpg" alt="Kokua Poke Bowl">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-section__image">
+            <img src="/assets/images/sections/carousel2.jpg" alt="Kokua Poke Bowl">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-section__image">
+            <img src="/assets/images/sections/carousel3.jpg" alt="Kokua Poke Bowl">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-section__arrows">
+      <div class="arrow arrow--left">
+        <img src="/assets/images/icons/arrow.png" alt="Previous">
+      </div>
+      <div class="arrow arrow--right">
+        <img src="/assets/images/icons/arrow.png" alt="Next">
+      </div>
+    </div>
+
+    <div class="swiper-pagination image-section__dots"></div>
+  </section>
+
+  {# Curve Transition #}
+  <div class="menu-curve"></div>
+
+  {# Menu Section #}
+  <section class="menu-section">
+    {# Background decorations #}
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 951px; z-index: 0;">
+      <img src="/assets/images/backgrounds/orange-bg-1.jpg" alt=""
+        style="width: 107.68%; height: 100%; position: absolute; left: -3.84%; top: 0; object-fit: cover;">
+    </div>
+
+    <div class="menu-section__title" style="position: relative; z-index: 1;">
+      <h3>Seu Momento</h3>
+      <h2>Kokua</h2>
+      <p>Pokes frescos, combinações autênticas e o melhor do sabor havaiano.</p>
+    </div>
+
+    <div class="menu-items" style="margin-top: 150px; position: relative;">
+      {# Kokua Salmon - imagem esquerda com background decor-k-1 #}
+      <div class="menu-item">
+        <div class="menu-item__image menu-item__image--with-bg-left">
+          <img src="/assets/images/pokes/salmon.jpg" alt="Kokua Salmon">
+        </div>
+        <div class="menu-item__content">
+          <h3 class="menu-item__title">KOKUA SALMON</h3>
+          <p class="menu-item__description">
+            Salmão, arroz japonês, abacate, manga, edamame, sunomono, cream cheese, molho de ostra, amêndoa laminada,
+            gergelim.
+          </p>
+        </div>
+      </div>
+
+      {# Kokua Noodles - imagem direita #}
+      <div class="menu-item menu-item--reverse">
+        <div class="menu-item__image">
+          <img src="/assets/images/pokes/noodles.jpg" alt="Kokua Noodles">
+        </div>
+        <div class="menu-item__content">
+          <h3 class="menu-item__title">KOKUA NOODLES</h3>
+          <p class="menu-item__description">
+            Glass noodles, shimeji, tomate cereja, edamame, pepino japonês, tofu frito, castanha de caju, crispy de alho
+            poro, molho especial.
+          </p>
+        </div>
+      </div>
+
+      {# Kokua Salad - imagem esquerda #}
+      <div class="menu-item">
+        <div class="menu-item__image">
+          <img src="/assets/images/pokes/karague.jpg" alt="Kokua Salad">
+        </div>
+        <div class="menu-item__content">
+          <h3 class="menu-item__title">KOKUA SALAD</h3>
+          <p class="menu-item__description">
+            Frango Karaague, Mix de folhas, tomate cereja, cenoura, wakame, pepino japonês, manga, amêndoa laminada,
+            gergelim, molho de gergelim.
+          </p>
+        </div>
+      </div>
+
+      {# Kokua Shiitake - imagem esquerda com background decor-k-2 #}
+      <div class="menu-item menu-item--reverse">
+        <div class="menu-item__image menu-item__image--with-bg-right">
+          <img src="/assets/images/pokes/shiitake.jpg" alt="Kokua Shiitake">
+        </div>
+        <div class="menu-item__content">
+          <h3 class="menu-item__title">KOKUA SHIITAKE</h3>
+          <p class="menu-item__description">
+            Shiitake, arroz japonês, abacate, cream cheese, edamame, cenoura, chips de batata doce, cebolete, molho
+            tare.
+          </p>
+        </div>
+      </div>
+
+      {# Kokua Karaague - imagem direita #}
+      <div class="menu-item">
+        <div class="menu-item__image">
+          <img src="/assets/images/pokes/salad.jpg" alt="Kokua Karaague">
+
+        </div>
+        <div class="menu-item__content">
+          <h3 class="menu-item__title">KOKUA KARAAGUE</h3>
+          <p class="menu-item__description">
+            Frango karaague, arroz japonês, cebola roxa, tomate cereja, edamame, sunomono, castanha de caju, cebolete,
+            molho especial.
+          </p>
+        </div>
+      </div>
+
+      {# Monte Seu Poke - imagem direita #}
+      <div class="menu-item menu-item--reverse">
+        <div class="menu-item__image">
+          <img src="/assets/images/pokes/monte-seu-poke.jpg" alt="Monte Seu Poke">
+        </div>
+        <div class="menu-item__content">
+          <h3 class="menu-item__title">MONTE SEU POKE</h3>
+          <p class="menu-item__description">
+            Escolha os seus ingredientes favoritos para acompanhar e monte o seu poke perfeito.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {# Background decoration bottom #}
+    <div style="position: absolute; bottom: -106px; left: 0; width: 100%; height: 240px; z-index: 0;">
+      <img src="/assets/images/backgrounds/orange-bg-4.jpg" alt=""
+        style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </section>
+
+  {# Delivery Section #}
+  <section class="delivery-section">
+    <div class="delivery-section__content">
+      <div class="delivery-section__text">
+        <h2>
+          Seu kokua,<br>
+          onde você<br>
+          estiver.
+        </h2>
+        <p>
+          Poke para comer em casa, no trabalho ou onde você estiver. Peça seu poke favorito pelo iFood ou no delivery.
+        </p>
+        <a href="tel:4132446659" class="phone">(41) 3244-6659</a>
+        <div class="delivery-section__button-wrapper">
+          <a href="#" class="content-section__button">Peça pelo Ifood</a>
+        </div>
+      </div>
+      <div class="delivery-section__image">
+        <img src="/assets/images/sections/section-3.jpg" alt="Kokua Delivery">
+      </div>
+    </div>
+  </section>
+
+  {# Footer #}
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__logo">
+        <img src="/assets/images/logos/footer-logo.png" alt="Kokua Poke">
+      </div>
+      <div class="footer__right">
+        <div class="footer__links">
+          <a href="#">Peça pelo Ifood</a>
+          <a href="#">Peça pelo delivery</a>
+          <a href="https://instagram.com/kokuapoke" target="_blank">@kokuapoke</a>
+        </div>
+        <div class="footer__cta">
+          <h3>experimente hoje peça agora.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer__separator"></div>
+    <div class="footer__credits">
+      <a href="https://namiconsultoria.com.br/pt/" target="_blank" rel="noopener noreferrer">Desenvolvido por Nami
+        Consultoria</a>
+    </div>
+  </footer>
+</div>
