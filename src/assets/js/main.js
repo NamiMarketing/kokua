@@ -38,4 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
       swiper.slideNext();
     });
   }
+
+  // Initialize AOS (Animate On Scroll)
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100,
+    disable: false
+  });
 });
